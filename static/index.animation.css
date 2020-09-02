@@ -1,0 +1,40 @@
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent {
+        margin-top: 5pc;
+        /* same as fixed top */
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+body>div {
+    height: 44%;
+}
+
+.pre-animate {
+    height: 100%;
+}
+.pre-animate>div>img {
+    padding: 1em;
+    height: 6em;
+}
+
+.animate {
+    overflow: hidden;
+    position: relative;
+}
+
+.animate>div {
+    height: 50%;
+    position: absolute;
+    transform: translateX(0%);
+    animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+    100% {
+        transform: translateX(-50%);
+    }
+}
