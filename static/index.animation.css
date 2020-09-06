@@ -29,12 +29,12 @@ body>div {
 .animate>div {
     height: 50%;
     position: absolute;
-    transform: translateX(0%);
+    transform: translateX(1%);/* Safari don't like 0 */
     animation: scroll-left 15s linear infinite;
 }
 
 @keyframes scroll-left {
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-49%);/* -50% adjusted to initial value 1% */
     }
 }
