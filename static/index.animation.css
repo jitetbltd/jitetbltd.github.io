@@ -9,6 +9,7 @@
         z-index: 1030;
     }
 }
+
 body>div {
     height: 44%;
 }
@@ -16,25 +17,29 @@ body>div {
 .pre-animate {
     height: 100%;
 }
+
 .pre-animate>div>img {
     padding: 1em;
     height: 6em;
 }
 
-.animate {
+.post-animate {
     overflow: hidden;
     position: relative;
 }
 
-.animate>div {
+.post-animate>div {
     height: 50%;
     position: absolute;
-    transform: translateX(1%);/* Safari don't like 0 */
     animation: scroll-left 15s linear infinite;
 }
 
 @keyframes scroll-left {
-    100% {
-        transform: translateX(-49%);/* -50% adjusted to initial value 1% */
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
     }
 }

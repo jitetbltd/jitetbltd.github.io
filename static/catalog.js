@@ -30,7 +30,7 @@ all_catalog.forEach(item => {
     <div class="card col-sm-4 m-3" style="width: 18rem;">
         <img src="./static/logo/suppliers/${item.img}" class="card-img-top" alt="${item.alt}">
         <div class="card-body">
-            <h5 class="card-title">${item.title}</h5>
+            <h5 class="card-title">&nbsp;${item.title}</h5>
             <a class="btn btn-outline-warning" target="_blank" href="${file_server}${item.catalog}${file_type}">Download</a>
         </div>
     </div>`

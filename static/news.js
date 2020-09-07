@@ -19,7 +19,7 @@ function printNews(news) {
 
 	<div id="collapse${news.serial}" class="collapse" aria-labelledby="heading${news.serial}" data-parent="${news_container}">
         <div class="card-body">
-            <img src="./static/news_img/${news.image}" align="right" style="max-width: 8rem;" loading="lazy" />
+            <img src="./static/news_img/${news.image}" align="right" style="max-width: 8rem;" />
             ${news.body}
         </div>
     </div>
