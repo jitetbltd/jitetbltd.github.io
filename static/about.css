@@ -1,0 +1,24 @@
+.bkimg {
+    background-image: url("./static/logo/logo_bk.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.animeImg {
+    max-width: -webkit-fill-available;
+    animation: fadeSwap 15s infinite;
+}
+
+@keyframes fadeSwap {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
