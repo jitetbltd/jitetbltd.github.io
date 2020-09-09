@@ -4,11 +4,6 @@ const news = [{
     title: 'Elevator Analysis and Monitoring Tester',
     image: 'EA7.JPG',
     body: `Elevator Analyics&trade; is a new elevator analysis and monitoring tools by Qameleon. Building upon the company's existing technology, the product looks for meaningful patterns in an elevator's operation and is promoted as workable with any elevator, regardless of age. The <b>EA7 Elevator Analyzer</b> was designed with input from inspectors, consultants and mechanics. Working with your laptop, it provides real-time information about an elevator's operation, creates a permanent record of every trip and automatically generates reports. It can be setup in minutes inside the car and does not interfere with the elevator's operation. Uses include inspection, troubleshooting, load testing, pre-modernization evaluation and traffic-analysis enhancement.`
-},{
-    serial: '2',
-    title: 'Elevator Analysis and Monitoring Tester',
-    image: 'EA7.JPG',
-    body: `Elevator Analyics&trade; is a new elevator analysis and monitoring tools by Qameleon. Building upon the company's existing technology, the product looks for meaningful patterns in an elevator's operation and is promoted as workable with any elevator, regardless of age. The <b>EA7 Elevator Analyzer</b> was designed with input from inspectors, consultants and mechanics. Working with your laptop, it provides real-time information about an elevator's operation, creates a permanent record of every trip and automatically generates reports. It can be setup in minutes inside the car and does not interfere with the elevator's operation. Uses include inspection, troubleshooting, load testing, pre-modernization evaluation and traffic-analysis enhancement.`
 }]
 const style = `
 <style>
