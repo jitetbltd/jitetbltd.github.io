@@ -10,12 +10,26 @@ var main_menu = `
                 min-width: 4rem;
                 min-height: 4rem;
                 background-repeat: no-repeat;
-                background-size: 4rem;
-                text-indent: 4.5rem;
+                background-size: 2rem;
+                text-indent: 2.5rem;
                 padding-top: 0.5rem;
                 font-weight: bolder;
                 font-size: 2rem;
+                background-position-y: center;
             }
+
+@media (min-width: 375px) {
+    .navbar-brand {
+        background-size: 4rem;
+        text-indent: 4.5rem;
+    }
+}
+@media (max-width: 374px;) {
+    .navbar-brand {
+        background-size: 2rem;
+        text-indent: 2.3rem;
+    }
+}
         </style>
         <a class="navbar-brand mx-auto" href="./index.html">JIT ETB LTD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
