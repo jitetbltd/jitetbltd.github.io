@@ -20,9 +20,18 @@ body>div {
 
 .pre-animate>div>img {
     padding: 1em;
-    height: 6em;
 }
-
+#customers>img {
+/* readable but not smooth on safari only */
+/* works fine on all chromium browsers */
+    height: 7em;
+    object-fit: contain;
+/* smooth but not readable across browsers
+    width: 12em; */
+}
+#suppliers>img {
+    width: 16em;
+}
 .post-animate {
     overflow: hidden;
     position: relative;
@@ -31,9 +40,8 @@ body>div {
 .post-animate>div {
     height: 50%;
     position: absolute;
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear 1s infinite;
 }
-
 @keyframes scroll-left {
     from {
         transform: translateX(0%);
