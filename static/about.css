@@ -1,24 +1,32 @@
-.bkimg {
-    background-image: url("./logo/logo_bk.jpg");
+.bg-img {
+    background-image: url("./logo/logo_gr.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .animeImg {
     max-width: -webkit-fill-available;
-    animation: fadeSwap 15s infinite;
+    animation: fadeSwap 15s ease infinite;
 }
 
 @keyframes fadeSwap {
     0% {
-        opacity: 1;
-    }
-
-    50% {
         opacity: 0;
     }
 
-    100% {
+    40% {
+        opacity: 0.5;
+    }
+
+    50% {
         opacity: 1;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
