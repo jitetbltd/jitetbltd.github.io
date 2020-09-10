@@ -1,0 +1,32 @@
+.bg-img {
+    background-image: url("./logo/logo_gr.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.animeImg {
+    max-width: -webkit-fill-available;
+    animation: fadeSwap 15s ease infinite;
+}
+
+@keyframes fadeSwap {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
