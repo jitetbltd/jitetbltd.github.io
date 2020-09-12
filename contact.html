@@ -11,16 +11,16 @@ layout: default
 <div class="container text-white" id="contact" style="padding-top: 5pc;">
     <h1 class="text-center text-white py-3">Contact Us</h1>
     <div class="row px-3">
-        {% for address in site.data.contact %}
+        {%- for address in site.data.contact -%}
         <div class="col-12 col-sm-6 col-lg-4">
             <h2 class="py-3">{{address.type}}</h2>
-            {% for item in address.items %}
+            {%- for item in address.items -%}
             <div class="media">
                 <span class="m-3 contact-info {{item.type}}"></span>
                 <div class="media-body my-3">{{item.data}}</div>
             </div>
-            {% endfor %}
+            {%- endfor -%}
         </div>
-        {% endfor %}
+        {%- endfor -%}
     </div>
 </div>

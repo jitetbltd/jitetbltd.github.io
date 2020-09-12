@@ -4,22 +4,22 @@ layout: default
 <script type="text/javascript">
     $('body').addClass('vh-100 bg-success');
 </script>
-<link rel="stylesheet" type="text/css" href="./static/index.animation.css">
+<link rel="stylesheet" type="text/css" href="./static/index.css">
 
 {% for brand in site.data.index %}
-{% capture style %}
+{%- capture style -%}
 style = "background-color: {% cycle '#D7E1E1', '#E4DCC6' %};"
-{% endcapture %}
+{%- endcapture -%}
 <div {{style}}>
     <div class="container pre-animate post-animate">
         <h1 class="text-center py-3">{{brand.title}}</h1>
         <div class="d-flex align-items-center" id={{brand.type}}>
-            {% for logo in brand.list %}
-            <img src="./static/logo/{{brand.type}}/{{logo}}" loading="lazy">
-            {% endfor %}
-            {% for logo in brand.list %}
-            <img src="./static/logo/{{brand.type}}/{{logo}}" loading="lazy">
-            {% endfor %}
+            {%- for i in (1..2) -%}
+            {%- for logo in brand.list -%}
+            {% capture logoName %}"./static/logo/{{brand.type}}/{{logo}}"{% endcapture %}
+            <img src={{ logoName }} loading="lazy">
+            {%- endfor -%}
+            {%- endfor -%}
         </div>
     </div>
 </div>

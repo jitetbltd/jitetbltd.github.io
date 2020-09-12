@@ -1,21 +1,21 @@
 [{
         "name": "Home",
-        "link": "/index.html"
+        "link": "index.html"
     },
     {
         "name": "About",
-        "link": "/about.html"
+        "link": "about.html"
     },
     {
         "name": "Catalogue",
-        "link": "/catalog.html"
+        "link": "catalog.html"
     },
     {
         "name": "News",
-        "link": "/news.html"
+        "link": "news.html"
     },
     {
         "name": "Contact",
-        "link": "/contact.html"
+        "link": "contact.html"
     }
 ]
