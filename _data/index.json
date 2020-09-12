@@ -1,13 +1,11 @@
 [{
     "type": "suppliers",
     "title": "Our Principals",
-    "color": "#D7E1E1",
     "list": ["fujihd.png", "movilift.png", "srl.png", "xiwei.png"]
 
 }, {
     "type": "customers",
     "title": "Our Clients",
-    "color": "#E4DCC6",
     "list": ["world-bank.svg", "BGMEA.png", "Bashundhara.png", "DOHS.png", "uttara_11.png", "uttara_14.png"]
 
 }]

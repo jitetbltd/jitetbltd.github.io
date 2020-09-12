@@ -1,4 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger{% if page.url != '/' %} fixed-top{% endif %}">
+{% if page.url != '/' %}
+{% assign homeClass = " fixed-top" %}
+{% endif %}
+{% assign navClass = "navbar navbar-expand-lg navbar-dark bg-danger{{ homeClass }}" %}
+<nav class={{ navClass }}>
     <div class="container">
         <style>
             body {
