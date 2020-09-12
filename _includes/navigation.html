@@ -1,7 +1,7 @@
 {% if page.url != '/' %}
 {% assign homeClass = " fixed-top" %}
 {% endif %}
-{% assign navClass = "navbar navbar-expand-lg navbar-dark bg-danger{{ homeClass }}" %}
+{% capture navClass %}"navbar navbar-expand-lg navbar-dark bg-danger{{homeClass}}"{% endcapture %}
 <nav class={{ navClass }}>
     <div class="container">
         <style>
