@@ -1,13 +1,14 @@
 {%- capture navClass -%}
 "navbar navbar-expand-lg navbar-dark bg-danger{% if page.url != '/' %} fixed-top{% endif %}"
 {%- endcapture -%}
+<style>
+    body {
+        font-family: Arimo;
+    }
+</style>
 <nav class={{ navClass }}>
     <div class="container">
-        <style>
-            body {
-                font-family: Arimo;
-            }
-
+        <style scoped>
             .navbar-brand {
                 background-image: url(./static/logo/logo_gr.jpg);
                 min-width: 4rem;
@@ -15,21 +16,25 @@
                 background-repeat: no-repeat;
                 background-size: 2rem;
                 text-indent: 2.5rem;
-                padding-top: 0.5rem;
+                padding-top: 0.9rem;
                 font-weight: bolder;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 background-position-y: center;
             }
 
             @media (max-width: 374px) {
                 .navbar-brand {
+                    padding-top: 0.9rem;
+                    font-size: 1.5rem;
                     background-size: 2rem;
-                    text-indent: 2.3rem;
+                    text-indent: 2.5rem;
                 }
             }
 
             @media (min-width: 375px) {
                 .navbar-brand {
+                    padding-top: 0.5rem;
+                    font-size: 2rem;
                     background-size: 4rem;
                     text-indent: 4.5rem;
                 }
