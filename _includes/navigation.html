@@ -40,14 +40,14 @@
                 }
             }
         </style>
-        <a class="navbar-brand mx-auto" href="./index.html">JIT ETB LTD</a>
+        <a class="navbar-brand mx-auto" href="/index.html">JIT ETB LTD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ml-auto">
                 {%- for item in site.data.navigation -%}
-                {% capture stringyLink %}"./{{ item.link }}"{% endcapture %}
+                {% capture stringyLink %}"/{{ item.link }}"{% endcapture %}
                 <a class="nav-item border border-light bg-danger text-white m-1 px-3 py-2 rounded text-decoration-none" href={{ stringyLink }}>{{ item.name }}</a>
                 {%- endfor -%}
             </div>
