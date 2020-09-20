@@ -1,5 +1,6 @@
 ---
 layout: default
+title: News
 ---
 <div class="container" style="padding-top: 5pc;">
     <h2 class="text-center py-3">News</h2>
@@ -30,7 +31,7 @@ layout: default
             <div id="collapse{{news.serial}}" class="collapse" aria-labelledby="heading{{news.serial}}" data-parent="{{news_container}}">
                 <div class="card-body">
                     {%- capture imgSrc -%}"./static/news_img/{{news.image}}"{%- endcapture -%}
-                    <img src={{ imgSrc }} align="right" />
+                    <img src={{ imgSrc }} align="right"  alt="{{ news.image | split: "." | first }}"/>
                     {{news.body}}
                 </div>
             </div>

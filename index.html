@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 <script type="text/javascript">
     $('body').addClass('vh-100 bg-success');
@@ -17,7 +18,7 @@ style = "background-color: {% cycle '#D7E1E1', '#E4DCC6' %};"
             {%- for i in (1..2) -%}
             {%- for logo in brand.list -%}
             {% capture logoName %}"./static/logo/{{brand.type}}/{{logo}}"{% endcapture %}
-            <img src={{ logoName }} loading="lazy">
+            <img src={{ logoName }} loading="lazy" alt="{{ logo | split: "." | first }}">
             {%- endfor -%}
             {%- endfor -%}
         </div>
