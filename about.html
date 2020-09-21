@@ -2,12 +2,44 @@
 layout: default
 title: About
 ---
-<link rel="stylesheet" type="text/css" href="/static/about.css">
 <div class="container" style="padding-top: 5pc;">
     <div class="row py-3 d-flex flex-row-reverse">
         <div class="col-12 col-md-4 mt-md-5 mr-md-auto">
-            <div class="px-0 bg-img">
-                <img class="animeImg" src="/static/logo/logo_bk.jpg" alt="Just In Time Engineering Technology Bangladesh" loading="lazy" />
+        <style type="text/css" scoped>
+            .bg-img {
+                position: relative;
+                width: 100%;
+            }
+            .bg-img>img {
+                width: inherit;
+            }
+            .bg-img>.image-gr {
+                position: absolute;
+            }
+            .bg-img>.image-bk {
+                position: relative;
+            }
+            .animeImg {
+                animation: fadeSwap 15s cubic-bezier(0,.2,1,.8) infinite;
+            }
+
+            @keyframes fadeSwap {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+            <div class="bg-img">
+                <img class="image-gr" src="/static/logo/logo_gr.jpg" alt="Just In Time Engineering Technology Bangladesh" loading="lazy" />
+                <img class="animeImg image-bk" src="/static/logo/logo_bk.jpg" alt="Just In Time Engineering Technology Bangladesh" loading="lazy" />
             </div>
         </div>
         <div class="col-12 col-md-6 ml-sm-auto">
