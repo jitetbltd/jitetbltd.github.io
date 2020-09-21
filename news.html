@@ -31,7 +31,7 @@ title: News
             <div id="collapse{{news.serial}}" class="collapse" aria-labelledby="heading{{news.serial}}" data-parent="{{news_container}}">
                 <div class="card-body">
                     {%- capture imgSrc -%}"./static/news_img/{{news.image}}"{%- endcapture -%}
-                    <img src={{ imgSrc }} align="right"  alt="{{ news.image | split: "." | first }}"/>
+                    <img src={{ imgSrc }} align="right"  alt="{{ news.alt }}"/>
                     {{news.body}}
                 </div>
             </div>
