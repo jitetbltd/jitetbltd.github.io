@@ -7,14 +7,16 @@ title: News
     <div class="accordion" id="news">
         <style scoped>
             .card-body>img {
-                max-width: -webkit-fill-available;
+                float: left;
+                width: -webkit-fill-available;
                 margin-bottom: 1rem;
             }
 
             @media (min-width: 540px) {
                 .card-body>img {
+                    float: right;
+                    width: inherit;
                     max-height: 10rem;
-                    margin-left: 1rem;
                 }
             }
         </style>
@@ -28,7 +30,7 @@ title: News
                 </h2>
             </div>
 
-            <div id="collapse{{news.serial}}" class="collapse" aria-labelledby="heading{{news.serial}}" data-parent="{{news_container}}">
+            <div id="collapse{{news.serial}}" class="collapse" aria-labelledby="heading{{news.serial}}" data-parent="#news">
                 <div class="card-body">
                     {%- capture imgSrc -%}"./static/news_img/{{news.image}}"{%- endcapture -%}
                     <img src={{ imgSrc }} align="right"  alt="{{ news.alt }}"/>
