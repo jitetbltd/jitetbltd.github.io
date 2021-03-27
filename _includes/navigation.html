@@ -47,8 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ml-auto">
                 {%- for item in site.data.navigation -%}
-                {% capture stringyLink %}"/{{ item.link }}"{% endcapture %}
-                <a class="nav-item border border-light bg-danger text-white m-1 px-3 py-2 rounded text-decoration-none" href={{ stringyLink }}>{{ item.name }}</a>
+                <a class="nav-item border border-light bg-danger text-white m-1 px-3 py-2 rounded text-decoration-none" href="{{ item.link }}">{{ item.name }}</a>
                 {%- endfor -%}
             </div>
         </div>
