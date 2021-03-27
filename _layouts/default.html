@@ -23,9 +23,14 @@
 <body>
     {%- include navigation.html -%}
     {{ content }}
-    <!--div class="container-fluid bg-success">
+    <!--
+    <div class="container-fluid bg-success">
         <p class="text-white text-center py-2 my-0">JITETB Ltd &reg; All rights reserved</p>
-    </div-->
+    </div>
+    -->
+    {%- comment -%}
+    {%- include footnav.html -%}
+    {%- endcomment -%}
 </body>
 
 </html>
