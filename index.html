@@ -2,12 +2,8 @@
 layout: default
 title: Home
 ---
-<script type="text/javascript">
-    $('body').addClass('vh-100 bg-success');
-</script>
-<link rel="stylesheet" type="text/css" href="./static/index.css">
-
-{% for brand in site.data.index %}
+<link rel="stylesheet" type="text/css" href="/static/index.css">
+{% for brand in site.data.partners %}
 {%- capture style -%}
 style = "background-color: {% cycle '#D7E1E1', '#E4DCC6' %};"
 {%- endcapture -%}
@@ -17,8 +13,8 @@ style = "background-color: {% cycle '#D7E1E1', '#E4DCC6' %};"
         <div class="d-flex align-items-center" id={{brand.type}}>
             {%- for i in (1..2) -%}
             {%- for logo in brand.list -%}
-            {% capture logoName %}"./static/logo/{{brand.type}}/{{logo}}"{% endcapture %}
-            <img src={{ logoName }} loading="lazy" alt="{{ logo | split: "." | first }}">
+            {% capture logoName %}"/static/logo/{{brand.type}}/{{logo.img}}"{% endcapture %}
+            <a href="{{logo.link}}"><img src={{ logoName }} loading="lazy" alt="{{ logo.img | split: "." | first }}"></a>
             {%- endfor -%}
             {%- endfor -%}
         </div>

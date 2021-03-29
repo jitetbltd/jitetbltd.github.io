@@ -20,7 +20,7 @@
     <meta name="google-site-verification" content="Th0tRkafW3AP4TTrON201wk2MhFaGfq7OSFwvoTNgbk" />
 </head>
 
-<body>
+<body {% if page.url == '/' %}class = "vh-100 bg-success"{% endif %}>
     {%- include navigation.html -%}
     {{ content }}
     <!--
