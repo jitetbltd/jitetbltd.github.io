@@ -23,13 +23,13 @@ title: News
         <div class="card">
             <div class="card-header" id="heading{{news.serial}}">
                 <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse{{news.serial}}" aria-expanded="true" aria-controls="collapse{{news.serial}}">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="" aria-expanded="true" aria-controls="">
                         {{news.title}}
                     </button>
                 </h2>
             </div>
 
-            <div id="collapse{{news.serial}}" class="collapse{% if news.serial == "1" %} show{% endif %}" aria-labelledby="heading{{news.serial}}" data-parent="#news">
+            <div id="collapse{{news.serial}}" class="collapse show" aria-labelledby="heading{{news.serial}}" data-parent="">
                 <div class="card-body">
                     {%- capture imgSrc -%}"./static/news_img/{{news.image}}"{%- endcapture -%}
                     <img src={{ imgSrc }} align="right"  alt="{{ news.alt }}"/>
