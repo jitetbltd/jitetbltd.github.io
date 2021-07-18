@@ -6,6 +6,8 @@
         right: 0;
         left: 0;
         z-index: 1030;
+        /* lightcoral with 80% opacity */
+        background-color: #f08080cc
     }
 }
 
