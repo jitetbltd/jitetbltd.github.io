@@ -38,7 +38,15 @@
                     background-size: 4rem;
                     text-indent: 4.5rem;
                 }
-            }
+            }{% if page.url != '/' %}
+            
+            @media (max-width: 991px) {
+                #navbarSupportedContent {
+                    position: fixed;
+                    top: 5pc; right: 0px; left: 0px;
+                    background-color: rgba(240, 128, 128, 0.8);
+                }
+            }{% endif %}
         </style>
         <a class="navbar-brand mx-auto" href="/index.html">JIT ETB LTD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
